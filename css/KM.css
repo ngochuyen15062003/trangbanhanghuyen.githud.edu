@@ -1,0 +1,159 @@
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;600;700&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+   background-color: aliceblue;
+   font-family: 'Quicksand', sans-serif;
+}
+#body{
+    width: 1200px;
+    margin: 0 auto;
+}
+#header{
+    height: 175px; 
+    width: 1200px;
+}  
+/* Hết header */
+#menu{
+    text-align: center;
+    height: 50px;
+    font-weight: 600;
+    line-height: 50px;
+    background-color: rgb(96, 141, 141);
+    display: block;
+}
+#menu ul li{
+    list-style: none;
+    display: inline-block;
+    padding: 0 20px;
+}
+#menu ul a{
+text-decoration: none;
+list-style: none;
+color: rgb(255, 255, 255);
+font-size: 20px;
+display: block;
+line-height: 20px;
+}
+#menu ul li a:hover{
+    color:#F76E11 ;
+    transition: .3s linear;
+    /* text-decoration: underline; */
+}
+#menu ul  li> .sub_menu{
+    background-color:rgb(183, 183, 241);
+    display: none;
+    position:absolute 
+}
+#menu ul li:hover .sub_menu {
+    display: flex;
+    flex-direction: column;
+}
+#DN{
+    display: block;
+    float: right;
+}
+/* end menu */
+#slide{
+    height: 45px;
+    background-color: rgb(173, 201, 201);
+}
+#slide p{
+    line-height: 45px;
+    font-size: 22px;
+    color: rgb(121, 35, 7);
+}
+/* end slide */
+#noidung{
+    background-color: rgb(245, 252, 252);
+    width: 1200px;
+    height:1000px;
+    float: left;
+    padding: 30px 30px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+}
+.khung{
+    width: 20%;
+    }
+.sanpham{
+    border: 1px solid grey;
+    border-radius: 10px;
+    padding: 10px;
+    margin: 5px;
+    }
+.sanpham >img{
+    width: 100%;
+    height: 145px;
+    border-radius: 3px;
+    }
+.sanpham .name{
+    color: red;
+    text-align: center;
+    font-size: large;
+    font-weight: bold;
+    margin-right: 5px;
+    margin-bottom: 5px;
+    }
+.sanpham .price{
+    text-align: center;
+    color: red;
+    font-size: large;
+    font-weight: bolder ;
+    }
+.sanpham .price del {
+    color: gray;
+    }
+.khung:hover{
+   transform: scale(1.1);
+   transition: .3s linear;
+    }
+    .khung:hover .name{
+     transition: .3s linear;
+        color:aqua;
+    }
+
+    .khung:hover .price{
+        transition: .3s linear;
+           color:aqua;
+       }
+.noidung{
+  height: 150px;
+  border: 1px solid gray;
+  border-radius: 5px;
+  margin-top: 15px;
+}
+/*end noi dung */
+#right{
+    width: 280px;
+    height: 850px;
+    float: left;
+    background-color:rgb(156, 202, 202);
+}
+#right ul{
+    padding-left: 20px;
+    line-height: 50px;
+}
+#right ul li a{
+    text-decoration: none;
+}
+#right ul li a:hover{
+    color: red;
+    transition: .3s linear;
+    text-decoration: underline;
+}
+#footer{
+ 
+    height: 150px;
+    background-color:rgb(136, 168, 168) ;
+    text-align: center;
+}
+
+#footer h2{
+    margin: 10px 0;
+    line-height: 40px;
+}

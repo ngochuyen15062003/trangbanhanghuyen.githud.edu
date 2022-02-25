@@ -1,0 +1,92 @@
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;600;700&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+   background-color: aliceblue;
+   font-family: 'Quicksand', sans-serif;
+}
+#body{
+    width: 1200px;
+    margin: 0 auto;
+}
+#header{
+    height: 175px; 
+    width: 1200px;
+}  
+/* Hết header */
+#menu{
+    text-align: center;
+    height: 50px;
+    font-weight: 600;
+    line-height: 50px;
+    background-color: rgb(96, 141, 141);
+}
+#menu ul li{
+    list-style: none;
+    display: inline-block;
+    padding: 0 20px;
+}
+#menu ul a{
+text-decoration: none;
+list-style: none;
+color: rgb(255, 255, 255);
+font-size: 20px;
+display: block;
+line-height: 20px;
+}
+#menu ul li a:hover{
+    color:#F76E11 ;
+    transition: .3s linear;
+    /* text-decoration: underline; */
+}
+#menu ul  li> .sub_menu{
+    background-color:rgb(183, 183, 241);
+    display: none;
+    position:absolute 
+}
+#menu ul li:hover .sub_menu {
+    display: flex;
+    flex-direction: column;
+}
+/* end menu */
+#slide{
+    height: 45px;
+    background-color: rgb(173, 201, 201);
+}
+#slide p{
+    line-height: 45px;
+    font-size: 22px;
+    color: rgb(121, 35, 7);
+}
+/* end slide */
+
+
+#noidung{
+    background-color: rgb(245, 252, 252);
+    width: 1200px;
+    height: 800px;
+    float: left;
+    padding: 30px 30px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+    
+}
+
+/*end noi dung */
+
+#footer{
+    margin-top: 120px; 
+    height: 140px;
+    background-color:rgb(136, 168, 168) ;
+    text-align: center;
+}
+
+#footer h2{
+    margin: 10px 0;
+    margin-top: 100px;
+    line-height: 40px;
+}
